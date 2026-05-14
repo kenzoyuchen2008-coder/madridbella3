@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #36110C;
+    background-color: #FCFCF0;
+    font-family: serif;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: serif;
+}
+
+/* nav */
+nav {
+    background-color: #36110C;
+    padding: 0 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    padding: 14px 0;
+    margin: 0;
+    gap: 10px;
+    font-family: serif;
+}
+
+button {
+    background-color: #36110C;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: serif;
+}
+
+button:hover {
+    background-color: #6E4020;
+}
+
+/* header */
+header {
+    background-color: #FCFCF0;
+    padding: 30px 20px 10px;
+    text-align: center;
+}
+
+header img {
+    width: 200px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* main */
+main section {
+    padding: 30px 20px 10px;
+}
+
+main section h3 {
+    text-align: center;
+    font-family: serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #36110C;
+}
+
+main section p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #FCFCF0;
+    margin-bottom: 0;
+}
+
+/* grade de produtos */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 24px 30px 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.prod-card {
+    background: #ffffff;
+    border: 1px solid rgba(54, 17, 12, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.prod-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.prod-info {
+    padding: 12px 14px 16px;
+}
+
+.prod-info h4 {
+    font-family: serif;
+    font-size: 1rem;
+    color: #36110C;
+    margin-bottom: 5px;
+}
+
+.prod-info p {
+    font-size: 0.78rem;
+    color: #FCFCF0;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.prod-info span {
+    font-family: serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #36110C;
+}
+
+/* footer */
+footer {
+    background-color: #36110C;
+    color: white;
+    padding: 18px 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #FCFCF0;
+    font-size: 0.82rem;
+}
+
+/* responsivo */
+@media (max-width: 700px) {
+    .produtos {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+}
